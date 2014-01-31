@@ -1,0 +1,794 @@
+<!-- Start point from all uri  -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Eldom</title>
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/all_include.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/custom-elements.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/custom-elements.css" />
+
+    <script type="text/javascript" src="js/jquery.fs.stepper.js"></script>
+
+    <script src="js/jquery.dd.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/dd.css" />
+
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+    <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script> <!--in_country social buttons-->
+
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/object_slider.js"></script>
+
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- popup -->
+</head><body>
+    <div id="page">
+        <div id="header">
+    <div id="header_top" class="container">
+        <a href="../eldom/" id="logo"></a>
+        <div id="header_links">
+            <a href="#" id="with_info">Полезная информация</a>
+            <a href="#">Наши партнеры</a>
+            <a href="#" class="green" id="login">Вход в личный кабинет</a>
+            <ul id="info_usefull">
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Планировка квартир</a></li>
+                <li><a href="#">Аналитики</a></li>
+                <li><a href="#">Гос. учреждения</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+        </div>
+        <form method="GET" action="">
+            <input type="text" name="query" id="query" value="" />
+            <input type="submit" value="" />
+            <div class="clear"></div>
+        </form>
+        <div class="clear"></div>
+    </div>
+</div>
+<div>
+    <div id="header_menu">
+        <ul id="menu">
+            <li><a href="#">Главная</a></li>
+            <li>
+                <a href="#">Недвижимость</a>
+                    <ul class="real_estate">
+                        <li><a href="#">квартиры москва и область</a></li>
+                        <li><a href="#">загородная недвижимость</a></li>
+                        <li><a href="#">зарубежная недвижимость</a></li>
+                        <li><a href="#">коммерческая недвижимость</a></li>
+                    </ul>
+            </li>
+            </li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="../eldom/contacts.html">Контакты</a></li>
+            <li>
+                <a href="#">О компании</a>
+                <ul class="aboutCompanny">
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </li>
+            <li><a href="../eldom/earn_money.html">Заработай с нами</a></li>
+            <li class="contact">
+                <div id="contacts_top">+7 (495) 555 55 55</div>
+                <div id="contacts_bot">г. Москва, Красная площадь, д. 1</div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="slider">
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+</div>                        <div class="sub_menu">
+    <p class="buy_menu_text">
+        <a href="#"><!-- class="active" -->
+            <span>Купить</span>
+        </a>
+    </p>
+
+    <p class="buy_menu_text">
+        <a href="#">
+            <span>Продать</span>
+        </a>
+    </p>
+    <p class="buy_menu_text">
+        <a href="#">
+            <span>Сдать</span>
+        </a>
+    </p>
+    <p class="buy_menu_text">
+        <a href="#">
+            <span>Снять</span>
+        </a>
+    </p>
+    <div class="clear"></div>
+    <div class="menu_line"></div>
+</div><div id="byu">
+    <div class="byu_content">
+        <div class="title">
+            <p>Купить квартиру</p>
+        </div>
+        <form>
+            <div class="wrap_search_prop">
+                <div class="left_part">
+                    <div class="flat_type b-custom-checkbox-type-2">
+                        <input type="checkbox" value id="dolya" name="flat_type"/>
+                        <label class="rectangle-checkbox" for="dolya">Доля</label>
+
+                        <input type="checkbox" value id="room" name="flat_type"/>
+                        <label class="rectangle-checkbox" for="room">Комн.</label>
+
+                        <input type="checkbox" value id="one" name="flat_type"/>
+                        <label for="one">1</label>
+
+                        <input type="checkbox" value id="two" name="flat_type"/>
+                        <label for="two">2</label>
+
+                        <input type="checkbox" value id="three" name="flat_type"/>
+                        <label for="three">3</label>
+
+                        <input type="checkbox" value id="grather4" name="flat_type"/>
+                        <label for="grather4">4+</label>
+                    </div>
+                    <div id="price">
+                        <div class="price_inputs">
+                            <label class="price_text" for="price_from">Цена</label>
+                            <input type="text" class="price_from" id="price_from" placeholder="от">
+                            <span class="dush price_text"> - </span>
+                            <input type="text" class="price_to" id="price_to" placeholder="до">
+                            <span>млн. руб.</span>
+                        </div>
+                        <div class="slider-range_price"></div>
+						<span class="line_values">
+							<ul>
+                                <li>0</li>
+                                <li>10</li>
+                                <li>100</li>
+                                <li>1000</li>
+                                <li>10000</li>
+                                <li>100000</li>
+                                <li>1000000</li>
+                            </ul>
+						</span>
+                    </div>
+                    <div id="distance_subway">
+                        <select>
+                            <option>Местоположение по станции метро</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <p id="links">
+                            <img src="images/map_marker.png">
+                            <a class="open-popup-link" href="#popup_location">Расположение</a>
+                            <span>+</span>
+                        </p>
+                        <!-- popup location -->
+<div id="popup_location" class="popup_location mfp-hide">
+    <p>Расположение</p>
+    <div class="first-row">
+        <div class="city">
+            <select>
+                <option>Город</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="brought">
+            <select>
+                <option>Район</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="street">
+            <select>
+                <option>Улица</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </div>
+    <div class="underground_place">
+        <select>
+            <option>Местоположение по станции метро</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="buttons buy_flat-buttons">
+        <button class="button_functional" type="submit" value="Submit">Отправить</button>
+        <button class="reset_button buy_flat-reset_button" type="reset" value="Reset">очистить</button>
+    </div>
+</div>
+<!-- end popup location -->                        <p class="distance_subway_text">Город: <b>Москва</b> \ Район: <b>Москва</b> \ Улица: <b>Москва</b>
+                    </div>
+                    <div class="novostoy">
+                        <input type="checkbox" value id="novostoy" name="checkbox" class="square-checkbox"/>
+                        <label for="novostoy"><span>База в новостройках</span></label>
+                    </div>
+                    <div class="square_ranger_block">
+                        <p>Общая площадь, кв.м</p>
+                        <div class="slider-range_square-all"></div>
+
+                        <p>Площадь кухни, кв.м</p>
+                        <div class="slider-range_square-kitchen"></div>
+                    </div>
+                </div>
+                <div class="right_part">
+                    <div class="balkon_lift">
+                        <div class="lift">
+                            <input type="checkbox" value id="lift" name="checkbox" class="square-checkbox"/>
+                            <label for="lift"><span>Лифт</span></label>
+                        </div>
+                        <div class="balkon">
+                            <input type="checkbox" value id="balkon" name="checkbox" class="square-checkbox"/>
+                            <label for="balkon"><span>Балкон</span></label>
+                        </div>
+                    </div>
+                    <div id="building_height">
+                        <div class="all_floors">
+                            <label class="floors_text" for="floors_from">Этажность</label>
+                            <div class="all_forms_input">
+                                <input type="text" class="floors_from" id="floors_from" placeholder="от">
+                                <span class="dush"> - </span>
+                                <input type="text" class="floors_to" id="floors_to" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="floor">
+                            <label class="floor_text" for="floor_from">Этаж</label>
+                            <div class="all_forms_input">
+                                <input type="text" class="floor_from" id="floor_from" placeholder="от">
+                                <span class="dush"> - </span>
+                                <input type="text" class="floor_to" id="floor_to" placeholder="до">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="except_floor b-custom-checkbox-type-2">
+                        <input type="checkbox" value id="first_floor" name="checkbox" />
+                        <label for="first_floor">Не 1й этаж</label>
+
+                        <input type="checkbox" value id="last_floor" name="checkbox" />
+                        <label for="last_floor">Не последний этаж</label>
+                    </div>
+                    <div id="distance_underground">
+                        <label for="to_underground_time">Расстояние до метро</label>
+                        <input type="text" id="to_underground_time" placeholder="3 мин.">
+                        <div class="distance_underground">
+                            <select>
+                                <option value="walk">пешком</option>
+                                <option value="rotated">2</option>
+                                <option value="inverse">3</option>
+                                <option value="other">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="refresh_by_days b-custom-checkbox-type-2">
+                        <span>За период последний</span>
+                        <input type="checkbox" value id="three_days" name="checkbox" />
+                        <label for="three_days">3 дня</label>
+
+                        <input type="checkbox" value id="seven_days" name="checkbox" />
+                        <label for="seven_days">7 дней</label>
+
+                        <input type="checkbox" value id="thirty_days" name="checkbox" />
+                        <label for="thirty_days">30 дней</label>
+                    </div>
+                    <div class="with_photo">
+                        <input type="checkbox" value id="with_photo" class="square-checkbox"/>
+                        <label for="with_photo"><span>Только с фотографиями</span></label>
+                    </div>
+                    <div class="buttons">
+                        <button class="button_submit search_button" type="submit" value="Submit">Найти</button>
+                        <button class="reset_button" type="reset" value="Reset">очистить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>		<div id="search_result">
+			<div class="title">
+				<p>Рузельтат поиска по Вашему запросу</p>
+				<div class="line"></div>
+			</div>
+			<table style="margin-top: 50px; background: #f7f7f7; font: normal 14px 'Segoe UI'; color: #555555;" width="900" align="center">
+				<tr align="center" style="border-top: 1px solid #d8d8d8">
+					<td style="width: 10px; border-left: 1px solid #d8d8d8;"></td>
+					<td colspan="7">
+                        <div class="wrap_pagination">
+    <ul class="pagination_content">
+        <li><a href="#!">1</a></li>
+        <li><a href="#!">2</a></li>
+        <li class="active">3</a></li>
+        <li><a href="#!">4</a></li>
+        <li><a href="#!">5</a></li>
+        <li><a href="#!">6</a></li>
+        <li><a href="#!">7</a></li>
+        <li><a href="#!">8</a></li>
+    </ul>
+</div>					</td>
+					<td style="width: 10px; border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tralign="center" style="color: #303741;">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="170px">Фото</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="170px">Адрес</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="70px">Комнат</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="160px">Метро<br>/ от метро</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="80px">Этаж<br>/ Этажность</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="120px">Площадь<br>общ/жил/кухн</td>
+					<td align="center" style="border-bottom: 1px solid #555555; padding-top: 23px; padding-bottom: 20px;" width="110px">Цена</td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tr class="search_res_data" align="center">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/photo_search_result.png" style="margin-top: 19px; margin-bottom: 5px;"/></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p class="search_res_addres"><a href="#">Москва, ул. Подводников, 12</a></p></td>
+					<td align="right" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style="margin-right: 10px; font-family: 'a-futurarounddemi'; font-size:14px;"><b>3</b></p></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/map_marker.png" style="float: left; margin-left: 35px; margin-right: 10px;"><p style="margin-left: 10px">м. Минская<br>3мин. пеш.</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">3/17</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">74 / 60 / 14</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">$146500000</p></td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tr class="search_res_data" align="center">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/photo_search_result.png" style="margin-top: 19px; margin-bottom: 5px;"/></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p class="search_res_addres">Москва, ул. Подводников, 12</p></td>
+					<td align="right" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style="margin-right: 10px; font-family: 'a-futurarounddemi'; font-size:14px;"><b>3</b></p></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/map_marker.png" style="float: left; margin-left: 35px; margin-right: 10px;"><p style="margin-left: 10px">м. Минская<br>3мин. пеш.</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">3/17</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">74 / 60 / 14</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">$146500000</p></td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tr class="search_res_data" align="center">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/photo_search_result.png" style="margin-top: 19px; margin-bottom: 5px;"/></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p class="search_res_addres">Москва, ул. Подводников, 12</p></td>
+					<td align="right" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style="margin-right: 10px; font-family: 'a-futurarounddemi'; font-size:14px;"><b>3</b></p></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/map_marker.png" style="float: left; margin-left: 35px; margin-right: 10px;"><p style="margin-left: 10px">м. Минская<br>3мин. пеш.</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">3/17</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">74 / 60 / 14</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">$146500000</p></td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tr class="search_res_data" align="center">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/photo_search_result.png" style="margin-top: 19px; margin-bottom: 5px;"/></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p class="search_res_addres">Москва, ул. Подводников, 12</p></td>
+					<td align="right" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style="margin-right: 10px; font-family: 'a-futurarounddemi'; font-size:14px;"><b>3</b></p></td>
+					<td align="left" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><img src="images/map_marker.png" style="float: left; margin-left: 35px; margin-right: 10px;"><p style="margin-left: 10px">м. Минская<br>3мин. пеш.</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">3/17</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">74 / 60 / 14</p></td>
+					<td align="center" style="border-bottom: 1px solid #e6e6e6; box-shadow: 0px 1px 0px #fff"><p style=" font-family: 'a-futurarounddemi'; font-size:14px;">$146500000</p></td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+				<tr align="center" style="border-bottom: 1px solid #d8d8d8">
+					<td style="border-left: 1px solid #d8d8d8"></td>
+					<td colspan="7" style="position: relative; padding-bottom: 21px;">
+                        <div class="wrap_pagination">
+    <ul class="pagination_content">
+        <li><a href="#!">1</a></li>
+        <li><a href="#!">2</a></li>
+        <li class="active">3</a></li>
+        <li><a href="#!">4</a></li>
+        <li><a href="#!">5</a></li>
+        <li><a href="#!">6</a></li>
+        <li><a href="#!">7</a></li>
+        <li><a href="#!">8</a></li>
+    </ul>
+</div>                        <div style="position: relative; top: -80px">
+                            <div style="position: absolute; width: 140px; top: 40px; right: 0px;">
+                                <p style="width: 72px; font: normal 12px 'Segoe UI'; color: #555555; text-align: left; float: left;">вариантов на странице</p>
+                                <input type="number" name="quantity" min="1" max="5" value="1">
+                            </div>
+                        </div>
+					</td>
+					<td style="border-right: 1px solid #d8d8d8"></td>
+				</tr>
+			</table>
+		</div><div id="offers">
+    <div class="title">
+        <p>Специальные предложения</p>
+        <div class="line"></div>
+    </div>
+    <div id="offers_inner" class="container">
+        <ul>
+            <li>
+                <div class="_offer f1">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_offer f2">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_offer f3">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li>
+                <div class="_offer f1">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_offer f2">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_offer f3">
+                    <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                    <div class="_offer_title">3-х комнатная квартира</div>
+                    <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                    <div class="_offer_price">$200000</div>
+                    <div class="_offer_info">
+                        <div class="_offer_line"></div>
+                        <table class="info">
+                            <tr>
+                                <td>Тип дома</td>
+                                <td class="bold">Кирпичный</td>
+                            </tr>
+                            <tr>
+                                <td>Этаж</td>
+                                <td class="bold">3</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь</td>
+                                <td class="bold">74 м&sup2;</td>
+                            </tr>
+                            <tr>
+                                <td>Жилая площадь</td>
+                                <td class="bold">50 м&sup2;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--start flat-->
+    <button id="open_iform" class="btn_green_type_2">Заявка на ипотеку</button>
+
+    <div id="submit_a_request_wrap">
+        <div class="form_wrap">
+            <h4 class="form_title p_0">Информация о заемщике</h4>
+            <form class="i_form">
+                <fieldset>
+                    <legend class="type_2">Цель кредита</legend>
+                    <input type="checkbox" name="c_credit_1" id="c_credit_1">
+                    <label for="c_credit_1" class="m_0">Вторичное жилье</label>
+                    <input type="checkbox" name="c_credit_2" id="c_credit_2">
+                    <label for="c_credit_2">Первичное жилье</label>
+                    <input type="checkbox" name="c_credit_3" id="c_credit_3">
+                    <label for="c_credit_3" class="m_0">Коттедж</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Пол</legend>
+                    <select>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Возраст</legend>
+                    <input type="text" name="age">
+                </fieldset>
+                <fieldset>
+                    <legend>Трудоустройство</legend>
+                    <select>
+                        <option>Найм</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend class="type_2">Тип дохода</legend>
+                    <input type="checkbox" name="d_type_1" id="d_type_1">
+                    <label for="d_type_1" class="m_0">Официальный</label>
+                    <input type="checkbox" name="d_type_2" id="d_type_2">
+                    <label for="d_type_2">Неофициальный</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="type_2">Гражданство</legend>
+                    <input type="checkbox" name="g_1" id="g_1">
+                    <label for="g_1" class="m_0">РФ</label>
+                    <input type="checkbox" name="g_2" id="g_2">
+                    <label for="g_2">СНГ</label>
+                    <input type="checkbox" name="g_3" id="g_3">
+                    <label for="g_3">Европа</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Регион покупки</legend>
+                    <select>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select>
+                    <input type="checkbox" name="have_s" id="have_s">
+                    <label for="have_s" class="m_0">Имеется созаемщик</label>
+                </fieldset>
+            </form>
+            <h4 class="form_title">Информация о кредите</h4>
+            <form class="i_form">
+                <fieldset>
+                    <legend>Валюта</legend>
+                    <select>
+                        <option>Рубли</option>
+                        <option>Евро</option>
+                        <option>Доллары</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Срок кредита</legend>
+                    <select>
+                        <option>5 лет</option>
+                        <option>6 лет</option>
+                        <option>10 лет</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость недвижимости</legend>
+                    <input type="text" name="price">
+                </fieldset>
+                <fieldset>
+                    <legend>Первоначальный взнос</legend>
+                    <input type="text" name="first_m">
+                </fieldset>
+            </form>
+            <h4 class="form_title">Контактная информация</h4>
+            <form class="i_form">
+                <fieldset>
+                    <legend>Ваше имя</legend>
+                    <input type="text" name="your_name">
+                </fieldset>
+                <fieldset>
+                    <legend>E-mail для связи</legend>
+                    <input type="email" name="your_email">
+                </fieldset>
+                <fieldset>
+                    <legend>Телефон для связи</legend>
+                    <input type="text" name="your_phone">
+                </fieldset>
+                <fieldset class="time">
+                    <legend class="type_2">Удобное время для звонка</legend>
+                    <input type="checkbox" name="all_time" id="all_time">
+                    <label for="all_time" class="m_0">любое время</label>
+                    <input type="checkbox" name="time_1" id="time_1">
+                    <label for="time_1" class="m_0">c 11:00 до 14:00</label>
+                    <input type="checkbox" name="time_2" id="time_2">
+                    <label for="time_2">c 14:00 до 15:00</label>
+                    <input type="checkbox" name="time_3" id="time_3">
+                    <label for="time_3" class="m_0">c 15:00 до 18:00</label>
+                    <input type="checkbox" name="time_4" id="time_4">
+                    <label for="time_4">c 18:00 до 21:00</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Дополнительная информация</legend>
+                    <textarea></textarea>
+                </fieldset>
+                <img src="images/capcha.png" alt="">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <div class="title">
+            <p>Не нашли подходящего?<br>
+    Оставьте заявку и мы поможем найти</p>
+            <div class="line"></div>
+        </div>
+<!--end flat-->
+
+<div id="blocks">
+    <div class="container">
+        <a href="#" class="block">
+            <div class="block_inner bg_03b21b">
+                <img src="images/banner_image.jpg" />
+                <div class="block_title">Отпуск в Тайланде за 800$</div>
+            </div>
+        </a>
+        <a href="#" class="block">
+            <div class="block_inner bg_f26522">
+                <img src="images/banner_image.jpg" />
+                <div class="block_title">Отпуск в Тайланде за 800$</div>
+            </div>
+        </a>
+        <a href="#" class="block">
+            <div class="block_inner bg_00bff3">
+                <img src="images/banner_image.jpg" />
+                <div class="block_title">Отпуск в Тайланде за 800$</div>
+            </div>
+        </a>
+        <a href="#" class="block">
+            <div class="block_inner bg_ede100">
+                <img src="images/banner_image.jpg" />
+                <div class="block_title">Отпуск в Тайланде за 800$</div>
+            </div>
+        </a>
+        <div class="clear"></div>
+    </div>
+</div><div id="about_us">
+    <div class="title">
+        <p>Наш лозунг — «Профессионально — не значит дорого»<br>и это действительно так.</p>
+        <div class="line"></div>
+    </div>
+    <div id="about_us_content">
+        <div class="about_us_left">
+            <h3>Профессионально!</h3>
+            <p>Наши специалисты имеют хорошую подготовку в сфере недвижимости, разбираются в самых важных юридических моментах и имеют достойный опыт в реализации своих навыков на реальных сделках, естественно они являются сертифицированными специалистами в ипотечном кредитовании, сформировали базу знаний из десятков и даже сотней часов тренингов связанных с недвижимостью. При покупке квартиры юристы проверят приобретаемый объект по всем правовым аспектам, а при продаже наши возможности рекламы выходят далеко за рамки методов большинства агентств недвижимости.</p>
+        </div>
+        <div class="about_us_right">
+            <h3>Не значит дорого!</h3>
+            <p>Мы не тратим больших денег на содержание административного персонала, мы не тратим деньги на пустую рекламу, мы дарим вам деньги за нашу рекомендацию, мы не имеем раздутого штата бездельников, мы платим только тем специалистам которые ответственно выполняют свою работу и всегда понимают пожелания клиентов, благодаря этому мы даём возможность вам оплачивать услуги разумными деньгами.</p>
+        </div>
+    </div>
+</div>        <div id="footer">
+    <div class="container">
+        <div id="footer_top">
+            <div id="footer_top_left">+7 (495) 555 55 55</div>
+            <div id="footer_top_right"><a href="mailto:eldom@mail.ru">eldom@mail.ru</a></div>
+            <div class="clear"></div>
+            <div class="goCenter">г. Москва, Красная площадь, д. 1</div>
+        </div>
+        <div id="footer_bot">
+            <div id="footer_bot_left">
+                <span>&copy; Эльдом</span>
+                <a href="../eldom/sitemap.html">Карта сайта</a>
+            </div>
+            <div id="footer_bot_right">
+                <img src="images/yarkie.png" />
+                <div>Разработка сайта &mdash; <a href="http://yarkie.ru/" target="_blank">&laquo;Яркие решения&raquo;</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="button_up"></div>
+</div>    </div>
+</body>
+</html>

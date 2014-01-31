@@ -1,0 +1,263 @@
+<!-- Start point from all uri  -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Eldom</title>
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/all_include.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/custom-elements.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/custom-elements.css" />
+
+    <script type="text/javascript" src="js/jquery.fs.stepper.js"></script>
+
+    <script src="js/jquery.dd.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/dd.css" />
+
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+    <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script> <!--in_country social buttons-->
+
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/object_slider.js"></script>
+
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- popup -->
+</head><body>
+    <div id="page">
+        <div id="header">
+    <div id="header_top" class="container">
+        <a href="../eldom/" id="logo"></a>
+        <div id="header_links">
+            <a href="#" id="with_info">Полезная информация</a>
+            <a href="#">Наши партнеры</a>
+            <a href="#" class="green" id="login">Вход в личный кабинет</a>
+            <ul id="info_usefull">
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Планировка квартир</a></li>
+                <li><a href="#">Аналитики</a></li>
+                <li><a href="#">Гос. учреждения</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+        </div>
+        <form method="GET" action="">
+            <input type="text" name="query" id="query" value="" />
+            <input type="submit" value="" />
+            <div class="clear"></div>
+        </form>
+        <div class="clear"></div>
+    </div>
+</div>
+<div>
+    <div id="header_menu">
+        <ul id="menu">
+            <li><a href="#">Главная</a></li>
+            <li>
+                <a href="#">Недвижимость</a>
+                    <ul class="real_estate">
+                        <li><a href="#">квартиры москва и область</a></li>
+                        <li><a href="#">загородная недвижимость</a></li>
+                        <li><a href="#">зарубежная недвижимость</a></li>
+                        <li><a href="#">коммерческая недвижимость</a></li>
+                    </ul>
+            </li>
+            </li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="../eldom/contacts.html">Контакты</a></li>
+            <li>
+                <a href="#">О компании</a>
+                <ul class="aboutCompanny">
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </li>
+            <li><a href="../eldom/earn_money.html">Заработай с нами</a></li>
+            <li class="contact">
+                <div id="contacts_top">+7 (495) 555 55 55</div>
+                <div id="contacts_bot">г. Москва, Красная площадь, д. 1</div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="slider">
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+</div>
+<p id="links">
+    <a class="open-popup-link" href="#popup_agents">Форма доступа к базе данных для агентов</a>
+</p>
+<p id="links">
+    <a class="open-popup-link" href="#popup_guide">Форма доступа к базе данных для руководства</a>
+</p>
+<p id="links">
+    <a class="open-popup-link" href="#popup_client">Форма доступа к базе данных для клиента</a>
+</p>
+<!-- links popup form_db -->
+
+<!-- popup form for agents -->
+<div id="popup_agents" class="popup_form_db mfp-hide">
+    <h4>Форма доступа к базе данных для агентов</h4>
+    <form class="form_db_agents">
+        <div class="block_input">
+            <label for="number_agent">Номер агента</label>
+            <input id="number_agent">
+        </div>
+        <div class="block_input">
+            <label for="agent_name">ФИО агента</label>
+            <input id="agent_name">
+        </div>
+        <div class="block_input">
+            <label for="date_registration">Дата регистрации</label>
+            <input id="date_registration">
+        </div>
+        <div class="block_input">
+            <label for="user_name">ФИО юзера</label>
+            <input id="user_name">
+        </div>
+        <div class="block_input error">
+            <label for="email_agent">email</label>
+            <input id="email_agent">
+            <span>имя ошибки</span>
+        </div>
+        <div class="block_input">
+            <label for="status">Статус</label>
+            <select id="status">
+                <option>Выполнено</option>
+                <option>Не выполнено</option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+        </div>
+        <div class="block_input sum">
+            <label for="sum">Сумма</label>
+            <input id="sum">
+            <span>млн.руб</span>
+        </div>
+        <div class="block_input">
+            <label for="client_name">ФИО клиента</label>
+            <input id="client_name">
+        </div>
+        <button class="button_functional" type="submit" value="Submit">Войти</button>
+    </form>
+</div>
+<!-- end popup form for agents -->
+
+<!-- popup form for guide -->
+<div id="popup_guide" class="popup_form_db mfp-hide">
+    <h4>Форма доступа к базе данных для руководства</h4>
+    <form class="form_db_agents">
+        <div class="block_input">
+            <label for="number_agent">Номер агента</label>
+            <input id="number_agent">
+        </div>
+        <div class="block_input">
+            <label for="yours_name">Свои ФИО</label>
+            <input id="yours_name">
+        </div>
+        <div class="block_input error">
+            <label for="number_referral">Номер рефералов</label>
+            <input id="number_referral">
+            <span>имя ошибки</span>
+        </div>
+        <div class="block_input">
+            <label for="date_registration_referral">Дата регистрации реферала</label>
+            <input id="date_registration_referral">
+        </div>
+        <div class="block_input">
+            <label for="status">Статус</label>
+            <select id="status">
+                <option>Выполнено</option>
+                <option>Не выполнено</option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+        </div>
+        <div class="block_input sum">
+            <label for="sum">Сумма</label>
+            <input id="sum">
+            <span>млн.руб</span>
+        </div>
+        <button class="button_functional" type="submit" value="Submit">Войти</button>
+    </form>
+</div>
+<!-- end popup form for guide -->
+
+<!-- popup form for  client-->
+<div id="popup_client" class="popup_form_db mfp-hide">
+    <h4>Форма доступа к базе данных для клиента</h4>
+    <form class="form_db_agents">
+        <div class="block_input">
+            <label for="number_agent">Номер агента</label>
+            <input id="number_agent">
+        </div>
+        <div class="block_input">
+            <label for="agent_name">Свои ФИО</label>
+            <input id="agent_name">
+        </div>
+        <div class="block_input error">
+            <label for="agent_name">Номер рефералов</label>
+            <input id="agent_name">
+            <span>имя ошибки</span>
+        </div>
+        <div class="block_input">
+            <label for="date_registration">Дата регистрации реферала</label>
+            <input id="date_registration">
+        </div>
+        <div class="block_input">
+            <label for="status">Статус</label>
+            <select id="status">
+                <option>Выполнено</option>
+                <option>Не выполнено</option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select>
+        </div>
+        <div class="block_input sum">
+            <label for="sum">Сумма</label>
+            <input id="sum">
+            <span>млн.руб</span>
+        </div>
+        <button class="button_functional" type="submit" value="Submit">Войти</button>
+    </form>
+</div>
+<!-- end popup form for client -->        <div id="footer">
+    <div class="container">
+        <div id="footer_top">
+            <div id="footer_top_left">+7 (495) 555 55 55</div>
+            <div id="footer_top_right"><a href="mailto:eldom@mail.ru">eldom@mail.ru</a></div>
+            <div class="clear"></div>
+            <div class="goCenter">г. Москва, Красная площадь, д. 1</div>
+        </div>
+        <div id="footer_bot">
+            <div id="footer_bot_left">
+                <span>&copy; Эльдом</span>
+                <a href="../eldom/sitemap.html">Карта сайта</a>
+            </div>
+            <div id="footer_bot_right">
+                <img src="images/yarkie.png" />
+                <div>Разработка сайта &mdash; <a href="http://yarkie.ru/" target="_blank">&laquo;Яркие решения&raquo;</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="button_up"></div>
+</div>    </div>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!-- Start point from all uri  -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Eldom</title>
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/all_include.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="js/easySlider1.7.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/custom-elements.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/custom-elements.css" />
+
+    <script type="text/javascript" src="js/jquery.fs.stepper.js"></script>
+
+    <script type="text/javascript" src="js/jquery.dd.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/dd.css" /> -->
+
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+    <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script> <!--in_country social buttons-->
+
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/object_slider.js"></script>
+
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script><!-- popup -->
+</head><body>
+    <div id="page">
+        <div id="header">
+    <div id="header_top" class="container">
+        <a href="../eldom/" id="logo"></a>
+        <div id="header_links">
+            <a href="#" id="with_info">Полезная информация</a>
+            <a href="#">Наши партнеры</a>
+            <a href="#" class="green" id="login">Вход в личный кабинет</a>
+            <ul id="info_usefull">
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Планировка квартир</a></li>
+                <li><a href="#">Аналитики</a></li>
+                <li><a href="#">Гос. учреждения</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+        </div>
+        <form method="GET" action="">
+            <input type="text" name="query" id="query" value="" />
+            <input type="submit" value="" />
+            <div class="clear"></div>
+        </form>
+        <div class="clear"></div>
+    </div>
+</div>
+<div>
+    <div id="header_menu">
+        <ul id="menu">
+            <li><a href="#">Главная</a></li>
+            <li>
+                <a href="#">Недвижимость</a>
+                    <ul class="real_estate">
+                        <li><a href="#">квартиры москва и область</a></li>
+                        <li><a href="#">загородная недвижимость</a></li>
+                        <li><a href="#">зарубежная недвижимость</a></li>
+                        <li><a href="#">коммерческая недвижимость</a></li>
+                    </ul>
+            </li>
+            </li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="../eldom/contacts.html">Контакты</a></li>
+            <li>
+                <a href="#">О компании</a>
+                <ul class="aboutCompanny">
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </li>
+            <li><a href="../eldom/earn_money.html">Заработай с нами</a></li>
+            <li class="contact">
+                <div id="contacts_top">+7 (495) 555 55 55</div>
+                <div id="contacts_bot">г. Москва, Красная площадь, д. 1</div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="slider">
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+    <img src="images/slider_image.jpg" />
+</div>                      
+   <div class="filters">
+
+            <div class="action_filters">
+                <ul>
+                    <li class="active"><a href="#">Купить</a></li>
+                    <li><a href="#">Продать</a></li>
+                    <li><a href="#">Сдать</a></li>
+                    <li><a href="#">Обменять</a></li>
+                </ul>
+            </div>
+            <h4>Купить квартиру</h4>
+            <div class="line"></div>
+            <div class="filters-blocks">
+                <div class="left-block">
+                    <ul class="big-checkbox">
+                        <li><input type="checkbox" id="room" /><label for="room">Комната</label></li>
+                        <li><input type="checkbox" id="part" /><label for="part">Доля</label></li>
+                        <li><input type="checkbox" id="one-room" /><label for="one-room">1</label></li>
+                        <li><input type="checkbox" id="two-room" /><label for="two-room">2</label></li>
+                        <li><input type="checkbox" id="three-room" /><label for="three-room">3</label></li>
+                        <li><input type="checkbox" id="four-room" /><label for="four-room">4+комн</label></li>
+                    </ul>
+                    <div class="price-filter range-slider">
+                        <label for="price-from">Цена</label>
+                        <input type="text" id="price-from" />
+                        <label> - </label>
+                        <input id="price-to" />
+                        <label> млн. руб. </label>
+                        <div id="price-range"></div>
+                        <ul class="steps">
+                            <li class="step-1"></li>
+                            <li class="step-2"></li>
+                            <li class="step-3"></li>
+                            <li class="step-4"></li>
+                            <li class="step-5"></li>
+                            <li class="step-6"></li>
+                            <li class="step-7"></li>
+                        </ul>
+                    </div>
+                    <div class="location">
+                        <div class="styled-select w400">
+                            <select>
+                                <option>Местоположение по станции метро</option>
+                                <option>Местоположение по станции метро</option>
+                                <option>Местоположение по станции метро</option>
+                            </select>
+                        </div>
+                        <div><a class="add-location" href="#"><span><img src="images/marker-location.png" alt="" /></span><span class="text">Расположение</span><span> + </span></a></div>
+                        <div><span>Город:</span><a href="#">Москва</a><span>/</span><span>Город:</span><a href="#">Москва</a><span>/</span><span>Город:</span><a href="#">Москва</a></div>
+                    </div>
+                    <ul class="small-checkbox">
+                        <li><input type="checkbox" id="balcony" /><label for="balcony">Балкон</label></li>
+                        <li><input type="checkbox" id="without-new-buildings" /><label for="without-new-buildings">Без квартир в новостройках</label></li>
+                    </ul>
+                    <div class="range-slider living_space">
+                        <label for="living_space-from">Жилая площадь:</label>
+                        <input type="text" id="living_space-from" style="border: 0; color: #f6931f; font-weight: bold;" />
+                        <input type="text" id="living_space-to" style="border: 0; color: #f6931f; font-weight: bold;" />
+                        <label> кв. м. </label>
+                        <div id="living_space_range"></div>
+                        <ul>
+                            <li class="step-1"></li>
+                            <li class="step-2"></li>
+                            <li class="step-3"></li>
+                            <li class="step-4"></li>
+                            <li class="step-5"></li>
+                            <li class="step-6"></li>
+                        </ul>
+                    </div>
+                    <div class="range-slider kitchen_size">
+                        <label for="kitchen_size-from">Площадь кухни:</label>
+                        <input type="text" id="kitchen_size-from" style="border: 0; color: #f6931f; font-weight: bold;" />
+                        <input type="text" id="kitchen_size-to" style="border: 0; color: #f6931f; font-weight: bold;" />
+                        <div id="kitchen_size_range"></div>
+                        <ul>
+                            <li class="step-1"></li>
+                            <li class="step-2"></li>
+                            <li class="step-3"></li>
+                            <li class="step-4"></li>
+                            <li class="step-5"></li>
+                            <li class="step-6"></li>
+                            <li class="step-7"></li>
+                            <li class="step-8"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <ul class="small-checkbox">
+                        <li><input type="checkbox" id="lift_pass" /><label for="lift_pass">Лифт пассажирский</label></li>
+                        <li><input type="checkbox" id="lift_gruz" /><label for="lift_gruz">Лифт грузовой</label></li>
+                    </ul>
+                    <div class="price-filter">
+                        <label for="floor-from">Этаж</label>
+                        <input type="text" id="floor-from" />
+                        <label> - </label>
+                        <input id="floor-to" />
+                        <ul class="big-checkbox">
+                            <li><input type="checkbox" id="no-one-floor" /><label for="no-one-floor">Не 1й этаж</label></li>
+                            <li><input type="checkbox" id="no-two-floor" /><label for="no-two-floor">Не 2й этаж</label></li>
+                            <li><input type="checkbox" id="no-last-floor" /><label for="no-last-floor">Не последний этаж</label></li>
+                        </ul>
+                    </div>
+                    <div class="to-subway">
+                        <div class="floating-left">
+                            <label>Расстояние до метро</label>
+                            <input type="text" placeholder="3 мин." value="" />
+                        </div>
+                        <div class="w158 floating-left dropdown-select-wrapper">
+                            <select class="dropdown-img">
+                                <option value="by_foot" data-image="images/human.png">Пешком</option>
+                                <option value="by_foot" data-image="images/human.png">Пункт 2</option>
+                                <option value="by_foot" data-image="images/human.png">Пункт 3</option>
+                                <option value="by_foot" data-image="images/human.png">Пункт 4</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div>
+                        <ul class="big-checkbox">
+                            <li><span>За период последние</span></li>
+                            <li><input type="checkbox" id="three-days" /><label for="three-days">3 дня</label></li>
+                            <li><input type="checkbox" id="seven-days" /><label for="seven-days">7 дней</label></li>
+                            <li><input type="checkbox" id="thirty-days" /><label for="thirty-days">30 дней</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="small-checkbox">
+                            <li><input type="checkbox" id="photo-only" /><label for="photo-only">Только с фотографиями</label></li>
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="button_green search">Найти</a><a class="clear-form" href="javascript:"><span>Очистить</span></a>
+                    </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="offers">
+            <div class="title">
+                <p>Специальные предложения</p>
+                <div class="line"></div>
+            </div>
+            <div id="offers_inner" class="container">
+                <ul>
+                    <li>
+                        <div class="_offer f1">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="_offer f2">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="_offer f3">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="_offer f1">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="_offer f2">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="_offer f3">
+                            <a href="#" class="_offer_img" style="background-image: url('images/offer_image.jpg')"><div></div></a>
+                            <div class="_offer_title">3-х комнатная квартира</div>
+                            <div class="_offer_address">Москва, ул. Подводников, 12</div>
+                            <div class="_offer_price">$200000</div>
+                            <div class="_offer_info">
+                                <div class="_offer_line"></div>
+                                <table class="info">
+                                    <tr>
+                                        <td>Тип дома</td>
+                                        <td class="bold">Кирпичный</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Этаж</td>
+                                        <td class="bold">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общая площадь</td>
+                                        <td class="bold">74 м&sup2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Жилая площадь</td>
+                                        <td class="bold">50 м&sup2;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="proposal_form">
+
+            <div class="title">
+                <p>Не нашли подходящего?<br />
+                    Оставьте заявку и мы поможем найти</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="form-block">
+                <form>
+                    <div class="center-block">
+                        <div class="line">
+                            <label>Ваше имя</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="line">
+                            <label>E-mail для связи</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="line">
+                            <label>Телефон для связи</label>
+                            <input type="text" value="" />
+                        </div>
+                        <div class="line">
+                            <ul class="time-free small-checkbox">
+                                <li class="w205"><span>Другие временные промежутки</span></li>
+                                <li><input type="checkbox" id="all-time" /><label for="all-time">Любое время</label></li>
+                                <li class="w205"><input type="checkbox" id="time-1" /><label for="time-1">c 11:00 до 14:00 </label></li>
+                                <li><input type="checkbox" id="time-2" /><label for="time-2">c 11:00 до 14:00 </label></li>
+                                <li class="w205"><input type="checkbox" id="time-3" /><label for="time-3">c 11:00 до 14:00 </label></li>
+                                <li><input type="checkbox" id="time-4" /><label for="time-4">c 11:00 до 14:00 </label></li>
+                            </ul>
+                        </div>
+                        <div class="line">
+                            <label>Дополнительная информация</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="line">
+                            <img src="images/capcha-img.png" alt="capcha" />
+                        </div>
+                        <a class="button_green proposal_form_button" href="#">Отправить</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        
+        <div id="blocks">
+            <div class="container">
+                <a href="#" class="block">
+                    <div class="block_inner bg_03b21b">
+                        <img src="images/banner_image.jpg" />
+                        <div class="block_title">Отпуск в Тайланде за 800$</div>
+                    </div>
+                </a>
+                <a href="#" class="block">
+                    <div class="block_inner bg_f26522">
+                        <img src="images/banner_image.jpg" />
+                        <div class="block_title">Отпуск в Тайланде за 800$</div>
+                    </div>
+                </a>
+                <a href="#" class="block">
+                    <div class="block_inner bg_00bff3">
+                        <img src="images/banner_image.jpg" />
+                        <div class="block_title">Отпуск в Тайланде за 800$</div>
+                    </div>
+                </a>
+                <a href="#" class="block">
+                    <div class="block_inner bg_ede100">
+                        <img src="images/banner_image.jpg" />
+                        <div class="block_title">Отпуск в Тайланде за 800$</div>
+                    </div>
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+        <div id="news">
+            <div class="title">
+                <p>Наш лозунг — «Профессионально — не значит дорого»<br /> и это действительно так.</p>
+                <div class="line"></div>
+            </div>
+            <div id="news_inner" class="container">
+                <div class="_news">
+                    <div class="_news_title"><a href="#">Профессионально!</a></div>
+                    <div class="_news_text">Наши специалисты имеют хорошую подготовку в сфере недвижимости, разбираются в самых важных юридических моментах и имеют достойный опыт в реализации своих навыков на реальных сделках, естественно они являются сертифицированными специалистами в ипотечном кредитовании, сформировали базу знаний из десятков и даже сотней часов тренингов связанных с недвижимостью. При покупке квартиры юристы проверят приобретаемый объект по всем правовым аспектам, а при продаже наши возможности рекламы выходят далеко за рамки методов большинства агентств недвижимости.</div>
+                </div>
+                <div class="_news">
+                    <div class="_news_title"><a href="#">Не значит дорого!</a></div>
+                    <div class="_news_text">Мы не тратим больших денег на содержание административного персонала, мы не тратим деньги на пустую рекламу, мы дарим вам деньги за нашу рекомендацию, мы не имеем раздутого штата бездельников, мы платим только тем специалистам которые ответственно выполняют свою работу и всегда понимают пожелания клиентов, благодаря этому мы даём возможность вам оплачивать услуги разумными деньгами.</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+     <div id="footer">
+    <div class="container">
+        <div id="footer_top">
+            <div id="footer_top_left">+7 (495) 555 55 55</div>
+            <div id="footer_top_right"><a href="mailto:eldom@mail.ru">eldom@mail.ru</a></div>
+            <div class="clear"></div>
+            <div class="goCenter">г. Москва, Красная площадь, д. 1</div>
+        </div>
+        <div id="footer_bot">
+            <div id="footer_bot_left">
+                <span>&copy; Эльдом</span>
+                <a href="../eldom/sitemap.html">Карта сайта</a>
+            </div>
+            <div id="footer_bot_right">
+                <img src="images/yarkie.png" />
+                <div>Разработка сайта &mdash; <a href="http://yarkie.ru/" target="_blank">&laquo;Яркие решения&raquo;</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="button_up"></div>
+</div>    </div>
+</body>
+</html>
